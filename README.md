@@ -9,6 +9,7 @@
 
 # Example usage
  - https://gitlab.nxs360.com/packages/php/spryker/open-ai/-/blob/main/src/ValanticSpryker/Zed/OpenAi/Communication/Console/OpenAiConsole.php#L39
+ - https://github.com/openai-php/client
 
 # Install
 - https://gitlab.nxs360.com/groups/packages/php/spryker/-/packages
