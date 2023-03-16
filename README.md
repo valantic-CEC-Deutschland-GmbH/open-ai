@@ -1,6 +1,6 @@
 # Open AI Spryker package
 
-[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%208.0-8892BF.svg)](https://php.net/)
+[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%208.1-8892BF.svg)](https://php.net/)
 [![coverage report](https://gitlab.nxs360.com/packages/php/spryker/open-ai/badges/master/pipeline.svg)](https://gitlab.nxs360.com/packages/php/spryker/open-ai/-/pipelines?page=1&scope=all&ref=master)
 [![coverage report](https://gitlab.nxs360.com/packages/php/spryker/open-ai/badges/master/coverage.svg)](https://packages.gitlab-pages.nxs360.com/php/spryker/open-ai)
 
