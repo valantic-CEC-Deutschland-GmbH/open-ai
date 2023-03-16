@@ -36,7 +36,7 @@ class OpenAiClient extends AbstractClient implements OpenAiClientInterface
      */
     public function completionsCreate(array $options = []): OpenAiCreateResponseTransfer
     {
-        return $this->getFactory()->createOpenAiClientAdapter()->completionsCreate($options);
+        return $this->getFactory()->createOpenAiClientDecorator()->completionsCreate($options);
     }
 
     /**
@@ -46,7 +46,7 @@ class OpenAiClient extends AbstractClient implements OpenAiClientInterface
      */
     public function chatCreate(array $options = []): OpenAiCreateResponseTransfer
     {
-        return $this->getFactory()->createOpenAiClientAdapter()->chatCreate($options);
+        return $this->getFactory()->createOpenAiClientDecorator()->chatCreate($options);
     }
 
     /**
@@ -56,7 +56,7 @@ class OpenAiClient extends AbstractClient implements OpenAiClientInterface
      */
     public function audioTranscribe(array $options = []): OpenAiTranscriptionResponseTransfer
     {
-        return $this->getFactory()->createOpenAiClientAdapter()->audioTranscribe($options);
+        return $this->getFactory()->createOpenAiClientDecorator()->audioTranscribe($options);
     }
 
     /**
@@ -66,7 +66,7 @@ class OpenAiClient extends AbstractClient implements OpenAiClientInterface
      */
     public function audioTranslate(array $options = []): OpenAiTranslationResponseTransfer
     {
-        return $this->getFactory()->createOpenAiClientAdapter()->audioTranslate($options);
+        return $this->getFactory()->createOpenAiClientDecorator()->audioTranslate($options);
     }
 
     /**
@@ -76,7 +76,7 @@ class OpenAiClient extends AbstractClient implements OpenAiClientInterface
      */
     public function editsCreate(array $options = []): OpenAiEditsCreateResponseTransfer
     {
-        return $this->getFactory()->createOpenAiClientAdapter()->editsCreate($options);
+        return $this->getFactory()->createOpenAiClientDecorator()->editsCreate($options);
     }
 
     /**
@@ -86,7 +86,7 @@ class OpenAiClient extends AbstractClient implements OpenAiClientInterface
      */
     public function embeddingsCreate(array $options = []): OpenAiEmbeddingsCreateResponseTransfer
     {
-        return $this->getFactory()->createOpenAiClientAdapter()->embeddingsCreate($options);
+        return $this->getFactory()->createOpenAiClientDecorator()->embeddingsCreate($options);
     }
 
     /**
@@ -94,7 +94,7 @@ class OpenAiClient extends AbstractClient implements OpenAiClientInterface
      */
     public function filesList(): OpenAiFilesListResponseTransfer
     {
-        return $this->getFactory()->createOpenAiClientAdapter()->filesList();
+        return $this->getFactory()->createOpenAiClientDecorator()->filesList();
     }
 
     /**
@@ -104,7 +104,7 @@ class OpenAiClient extends AbstractClient implements OpenAiClientInterface
      */
     public function filesDelete(string $file): OpenAiFilesDeleteResponseTransfer
     {
-        return $this->getFactory()->createOpenAiClientAdapter()->filesDelete($file);
+        return $this->getFactory()->createOpenAiClientDecorator()->filesDelete($file);
     }
 
     /**
@@ -114,7 +114,7 @@ class OpenAiClient extends AbstractClient implements OpenAiClientInterface
      */
     public function filesRetrieve(string $file): OpenAiFilesRetrieveResponseTransfer
     {
-        return $this->getFactory()->createOpenAiClientAdapter()->filesRetrieve($file);
+        return $this->getFactory()->createOpenAiClientDecorator()->filesRetrieve($file);
     }
 
     /**
@@ -124,7 +124,7 @@ class OpenAiClient extends AbstractClient implements OpenAiClientInterface
      */
     public function filesUpload(array $options = []): OpenAiFilesUploadResponseTransfer
     {
-        return $this->getFactory()->createOpenAiClientAdapter()->filesUpload($options);
+        return $this->getFactory()->createOpenAiClientDecorator()->filesUpload($options);
     }
 
     /**
@@ -134,7 +134,7 @@ class OpenAiClient extends AbstractClient implements OpenAiClientInterface
      */
     public function filesDownload(string $file): string
     {
-        return $this->getFactory()->createOpenAiClientAdapter()->filesDownload($file);
+        return $this->getFactory()->createOpenAiClientDecorator()->filesDownload($file);
     }
 
     /**
@@ -144,7 +144,7 @@ class OpenAiClient extends AbstractClient implements OpenAiClientInterface
      */
     public function fineTunesCreate(array $options = []): OpenAiFinetuneCreateResponseTransfer
     {
-        return $this->getFactory()->createOpenAiClientAdapter()->fineTunesCreate($options);
+        return $this->getFactory()->createOpenAiClientDecorator()->fineTunesCreate($options);
     }
 
     /**
@@ -152,7 +152,7 @@ class OpenAiClient extends AbstractClient implements OpenAiClientInterface
      */
     public function fineTunesList(): OpenAiFinetuneListResponseTransfer
     {
-        return $this->getFactory()->createOpenAiClientAdapter()->fineTunesList();
+        return $this->getFactory()->createOpenAiClientDecorator()->fineTunesList();
     }
 
     /**
@@ -162,7 +162,7 @@ class OpenAiClient extends AbstractClient implements OpenAiClientInterface
      */
     public function fineTunesRetrieve(string $fineTuneId): OpenAiFinetuneRetrieveResponseTransfer
     {
-        return $this->getFactory()->createOpenAiClientAdapter()->fineTunesRetrieve($fineTuneId);
+        return $this->getFactory()->createOpenAiClientDecorator()->fineTunesRetrieve($fineTuneId);
     }
 
     /**
@@ -172,7 +172,7 @@ class OpenAiClient extends AbstractClient implements OpenAiClientInterface
      */
     public function fineTunesCancel(string $fineTuneId): OpenAiFinetuneCancelResponseTransfer
     {
-        return $this->getFactory()->createOpenAiClientAdapter()->fineTunesCancel($fineTuneId);
+        return $this->getFactory()->createOpenAiClientDecorator()->fineTunesCancel($fineTuneId);
     }
 
     /**
@@ -182,7 +182,7 @@ class OpenAiClient extends AbstractClient implements OpenAiClientInterface
      */
     public function fineTunesListEvents(string $fineTuneId): OpenAiFinetuneListEventsResponseTransfer
     {
-        return $this->getFactory()->createOpenAiClientAdapter()->fineTunesListEvents($fineTuneId);
+        return $this->getFactory()->createOpenAiClientDecorator()->fineTunesListEvents($fineTuneId);
     }
 
     /**
@@ -192,7 +192,7 @@ class OpenAiClient extends AbstractClient implements OpenAiClientInterface
      */
     public function moderationsCreate(array $options = []): OpenAiModerationsCreateResponseTransfer
     {
-        return $this->getFactory()->createOpenAiClientAdapter()->moderationsCreate($options);
+        return $this->getFactory()->createOpenAiClientDecorator()->moderationsCreate($options);
     }
 
     /**
@@ -202,7 +202,7 @@ class OpenAiClient extends AbstractClient implements OpenAiClientInterface
      */
     public function imagesCreate(array $options = []): OpenAiImagesCreateResponseTransfer
     {
-        return $this->getFactory()->createOpenAiClientAdapter()->imagesCreate($options);
+        return $this->getFactory()->createOpenAiClientDecorator()->imagesCreate($options);
     }
 
     /**
@@ -212,7 +212,7 @@ class OpenAiClient extends AbstractClient implements OpenAiClientInterface
      */
     public function imagesEdit(array $options = []): OpenAiImagesEditResponseTransfer
     {
-        return $this->getFactory()->createOpenAiClientAdapter()->imagesEdit($options);
+        return $this->getFactory()->createOpenAiClientDecorator()->imagesEdit($options);
     }
 
     /**
@@ -222,6 +222,6 @@ class OpenAiClient extends AbstractClient implements OpenAiClientInterface
      */
     public function imagesVariation(array $options = []): OpenAiImagesVariationResponseTransfer
     {
-        return $this->getFactory()->createOpenAiClientAdapter()->imagesVariation($options);
+        return $this->getFactory()->createOpenAiClientDecorator()->imagesVariation($options);
     }
 }

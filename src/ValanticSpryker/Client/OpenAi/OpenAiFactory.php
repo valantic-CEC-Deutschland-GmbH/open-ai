@@ -27,7 +27,7 @@ class OpenAiFactory extends AbstractFactory
     /**
      * @return \ValanticSpryker\Client\OpenAi\Decorator\OpenAiClientDecorator
      */
-    public function createOpenAiClientAdapter(): OpenAiClientDecorator
+    public function createOpenAiClientDecorator(): OpenAiClientDecorator
     {
         return new OpenAiClientDecorator($this->createOpenAiClient());
     }
