@@ -22,6 +22,7 @@
 
 # Install
 - composer require the package `composer req valantic-spryker/open-ai:^1.0.4` (see https://gitlab.nxs360.com/groups/packages/php/spryker/-/packages)
+- add `'ValanticSpryker'` as first element to your `$config[KernelConstants::CORE_NAMESPACES]` 
 - configure your openai key in your config `$config[OpenAiConstants::OPENAI_API_KEY] = 'xxxxxx';` (https://platform.openai.com/account/api-keys)
 - `console propel:install`
 - `console transfer:generate`
