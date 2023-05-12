@@ -8,7 +8,8 @@
  - OpenAI Client for spryker
  - BO UI to manage prompts 
  - BO UI to generate product descriptions
- - 
+
+# Screenshots
 ![2023-05-12_12-44.png](2023-05-12_12-44.png)
 ![2023-05-12_12-45.png](2023-05-12_12-45.png)
 ![2023-05-12_12-45_1.png](2023-05-12_12-45_1.png)
