@@ -20,8 +20,8 @@
  - https://github.com/openai-php/client
 
 # Install
-- composer require the package (see https://gitlab.nxs360.com/groups/packages/php/spryker/-/packages)
-- configure your openai key in your config (https://platform.openai.com/account/api-keys)
+- composer require the package `composer req valantic-spryker/open-ai:^1.0.4` (see https://gitlab.nxs360.com/groups/packages/php/spryker/-/packages)
+- configure your openai key in your config `$config[OpenAiConstants::OPENAI_API_KEY] = 'xxxxxx';` (https://platform.openai.com/account/api-keys)
 - `console propel:install`
 - `console transfer:generate`
 - load open-ai js in your backoffice twig (see `Zed/Gui/Presentation/Layout/layout.twig:5`)
