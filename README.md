@@ -30,6 +30,7 @@
 - add to your projects backoffice navigation.xml (see `src/config/Zed/navigation.xml:370`)
 - `console navigation:build-cache`
 - `console router:cache:warm-up:backoffice`
+- add `path.resolve('./vendor/valantic-spryker/')` to your JS webpack build dirs `frontend/zed/build.js:11`
 - build frontend (`npm run zed`)
 
 # Reference implementation
