@@ -7,7 +7,11 @@
 # Description
  - OpenAI Client for spryker
  - BO UI to manage prompts 
- - BO UI to generate product descriptions
+ - BO UI to generate prompts for:
+   - product descriptions
+   - seo title
+   - seo keywords
+   - seo description
 
 # Screenshots
 ![2023-05-12_12-44.png](2023-05-12_12-44.png)
@@ -15,8 +19,19 @@
 ![2023-05-12_12-45_1.png](2023-05-12_12-45_1.png)
 ![2023-05-12_12-47.png](2023-05-12_12-47.png)
 ![2023-05-12_12-48.png](2023-05-12_12-48.png)
+![2023-05-12_17-30.png](2023-05-12_17-30.png)
  - 
 # Example usage
+ - use this snipped to upgrade backoffice inputs to openai inputs (also see `Zed/OpenAi/assets/Zed/js/modules/openai.js:4`)
+ ```javascript
+ attachOpenAiCompletionApiToToForm('textarea[name*="description"]', function(event, languageContext) {
+  let nameInput = $('input[name*="'+languageContext+'][name"]');
+  let skuInput = $('input[name*="'+languageContext+'][sku"]');
+  return {title: nameInput.value, sku: skuInput.value};
+ });
+ ```
+
+
  - https://gitlab.nxs360.com/packages/php/spryker/open-ai/-/blob/main/src/ValanticSpryker/Zed/OpenAi/Communication/Console/OpenAiConsole.php#L39
  - https://github.com/openai-php/client
 
