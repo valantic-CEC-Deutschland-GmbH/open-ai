@@ -22,14 +22,14 @@
 # Install
 - composer require the package (see https://gitlab.nxs360.com/groups/packages/php/spryker/-/packages)
 - configure your openai key in your config (https://platform.openai.com/account/api-keys)
-- console propel:install
-- console transfer:generate
-- load open-ai js in your backoffice twig (see Zed/Gui/Presentation/Layout/layout.twig:5)
-- console twig:cache:warmer
-- add to your projects backoffice navigation.xml (see src/config/Zed/navigation.xml:370)
-- console navigation:build-cache
-- console router:cache:warm-up:backoffice
-- build frontend (npn run zed)
+- `console propel:install`
+- `console transfer:generate`
+- load open-ai js in your backoffice twig (see `Zed/Gui/Presentation/Layout/layout.twig:5`)
+- `console twig:cache:warmer` 
+- add to your projects backoffice navigation.xml (see `src/config/Zed/navigation.xml:370`)
+- `console navigation:build-cache`
+- `console router:cache:warm-up:backoffice`
+- build frontend (`npm run zed`)
 
 # Reference implementation
 - unknown
