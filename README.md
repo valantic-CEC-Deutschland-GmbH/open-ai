@@ -6,14 +6,30 @@
 
 # Description
  - OpenAI Client for spryker
-
+ - BO UI to manage prompts 
+ - BO UI to generate product descriptions
+ - 
+![2023-05-12_12-44.png](2023-05-12_12-44.png)
+![2023-05-12_12-45.png](2023-05-12_12-45.png)
+![2023-05-12_12-45_1.png](2023-05-12_12-45_1.png)
+![2023-05-12_12-47.png](2023-05-12_12-47.png)
+![2023-05-12_12-48.png](2023-05-12_12-48.png)
+ - 
 # Example usage
  - https://gitlab.nxs360.com/packages/php/spryker/open-ai/-/blob/main/src/ValanticSpryker/Zed/OpenAi/Communication/Console/OpenAiConsole.php#L39
  - https://github.com/openai-php/client
 
 # Install
-- https://gitlab.nxs360.com/groups/packages/php/spryker/-/packages
+- composer require the package (see https://gitlab.nxs360.com/groups/packages/php/spryker/-/packages)
 - configure your openai key in your config (https://platform.openai.com/account/api-keys)
+- console propel:install
+- console transfer:generate
+- load open-ai js in your backoffice twig (see Zed/Gui/Presentation/Layout/layout.twig:5)
+- console twig:cache:warmer
+- add to your projects backoffice navigation.xml (see src/config/Zed/navigation.xml:370)
+- console navigation:build-cache
+- console router:cache:warm-up:backoffice
+- build frontend (npn run zed)
 
 # Reference implementation
 - unknown
