@@ -1,0 +1,13 @@
+{% extends '@Gui/Layout/layout.twig' %}
+
+{% block action %}
+    {{ createActionButton('/open-ai/create/index', 'Create Prompt' | trans) }}
+{% endblock %}
+
+{% block content %}
+    {% embed '@Gui/Partials/widget.twig' with { widget_title: 'OpenAi' } %}
+        {% block widget_content %}
+            {{ OpenAis | raw }}
+        {% endblock %}
+    {% endembed %}
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends '@Gui/Layout/layout.twig' %}
+
+{% set widget_title = 'Create OpenAI Prompt' | trans %}
+
+{% block head_title widget_title %}
+{% block section_title widget_title %}
+
+{% block action %}
+    {{ backActionButton(url('/open-ai'), 'Back to OpenAI Prompt list' | trans) }}
+{% endblock %}
+
+{% block content %}
+    {% embed '@Gui/Partials/widget.twig' with { widget_title: 'OpenAi Prompt' } %}
+        {% block widget_content %}
+            {{ form(OpenAiCreateForm) }}
+        {% endblock %}
+    {% endembed %}
+{% endblock %}
