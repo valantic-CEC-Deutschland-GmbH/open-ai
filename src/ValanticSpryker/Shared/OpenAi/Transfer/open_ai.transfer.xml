@@ -164,4 +164,47 @@
         <property name="created" type="int"/>
         <property name="data" type="array"/>
     </transfer>
+
+    <transfer name="OpenAiPrompt">
+        <property name="idOpenaiPrompt" type="int"/>
+        <property name="fkLocale" type="int"/>
+        <property name="locale" type="Locale"/>
+        <property name="name" type="string"/>
+        <property name="prompt" type="string"/>
+        <property name="model" type="string"/>
+        <property name="suffix" type="string"/>
+        <property name="maxTokens" type="int"/>
+        <property name="temperature" type="float"/>
+        <property name="topP" type="float"/>
+        <property name="nCompletions" type="float"/>
+        <property name="stream" type="bool"/>
+        <property name="logprobs" type="float"/>
+        <property name="echo" type="bool"/>
+        <property name="stop" type="string"/>
+        <property name="presencePenalty" type="float"/>
+        <property name="frequencyPenalty" type="float"/>
+        <property name="bestOf" type="int"/>
+        <property name="user" type="string"/>
+        <property name="createdAt" type="string"/>
+        <property name="updatedAt" type="string"/>
+    </transfer>
+
+    <transfer name="OpenAiPromptCriteria">
+        <property name="idOpenaiPrompt" type="int"/>
+    </transfer>
+
+    <transfer name="OpenAiAssignEventToPromptRequest">
+        <property name="prompt" type="int"/>
+        <property name="event" type="string"/>
+    </transfer>
+
+    <transfer name="OpenAiExecuteRequest">
+        <property name="event" type="string"/>
+        <property name="context" type="array"/>
+    </transfer>
+
+    <transfer name="OpenAiAssignEventToPrompt">
+        <property name="openAiPrompt" type="OpenAiPrompt"/>
+        <property name="event" type="string"/>
+    </transfer>
 </transfers>

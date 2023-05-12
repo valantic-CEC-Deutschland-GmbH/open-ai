@@ -13,6 +13,7 @@
 
 # Install
 - https://gitlab.nxs360.com/groups/packages/php/spryker/-/packages
+- configure your openai key in your config (https://platform.openai.com/account/api-keys)
 
 # Reference implementation
 - unknown
