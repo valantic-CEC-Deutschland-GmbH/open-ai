@@ -31,12 +31,12 @@ $(document).ready(function () {
 
                       <!-- Modal Header -->
                       <div class="modal-header">
-                        <h4 class="modal-title">Edit Text</h4>
+                        <h4 class="modal-title">OpenAI <img src='https://seeklogo.com/images/O/open-ai-logo-8B9BFEDC26-seeklogo.com.png' style='width: 15px; padding-left: 5px;' /></h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                       </div>
-
+                      
                         <div id="spinner" style="display: block;">
-                              <i class="fa fa-spinner fa-spin"></i> <span id="spinner-text">Collecting prompts...</span>
+                              <i class="fa fa-spinner fa-spin"></i>  <span id="spinner-text">Collecting prompts...</span>
                         </div>
 
                       <!-- Modal body -->
