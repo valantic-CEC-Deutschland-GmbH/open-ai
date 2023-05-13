@@ -72,3 +72,13 @@ XDEBUG:
 
 # use nodejs
  - docker run -it --rm --name my-running-script -v "$PWD":/data node:18 bash
+
+ToDo:
+ - add list with useful prompts
+ - refactor UI to native web components
+ - add importer for demo prompts
+ - add twig example
+ - add generate product button
+ - add generate customer button
+ - add generate cms page button
+ - add generate cms seo texts buttons
