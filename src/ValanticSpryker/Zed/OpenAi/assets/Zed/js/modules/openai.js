@@ -34,7 +34,7 @@ $(document).ready(function () {
                         <h4 class="modal-title">OpenAI <img src='https://seeklogo.com/images/O/open-ai-logo-8B9BFEDC26-seeklogo.com.png' style='width: 15px; padding-left: 5px;' /></h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                       </div>
-                      
+
                         <div id="spinner" style="display: block;">
                               <i class="fa fa-spinner fa-spin"></i>  <span id="spinner-text">Collecting prompts...</span>
                         </div>
@@ -74,6 +74,10 @@ $(document).ready(function () {
             $(descriptionElement).parent().after(newButton);
         }
 
+        if (descriptionElements.length === 0)
+        {
+            return 0;
+        }
         const spinner = document.getElementById('spinner');
         const spinnerText = document.getElementById('spinner-text');
         const modalBody = document.getElementById('modal-body');
