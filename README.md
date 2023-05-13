@@ -82,3 +82,4 @@ ToDo:
  - add generate customer button
  - add generate cms page button
  - add generate cms seo texts buttons
+ - add more context to generate button (i.e. price, category, attributes)
