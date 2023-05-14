@@ -131,7 +131,7 @@ $(document).ready(function () {
         {
             return unsafe
                 .replace(/&/g, "&amp;")
-                .replace(/\n/g, "")
+                .replace(/^\n{2}/, "")
                 .replace(/</g, "&lt;")
                 .replace(/>/g, "&gt;")
                 .replace(/"/g, "&quot;")
