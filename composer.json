@@ -1,5 +1,5 @@
 {
-    "name": "valantic-spryker/open-ai",
+    "name": "valantic-cec/open-ai",
     "type": "library",
     "description": "OpenAI Client for spryker.",
     "license": "MIT",
@@ -35,9 +35,6 @@
         ],
         "process-timeout": 900,
         "chromium-revision": 814168,
-        "gitlab-domains": [
-            "gitlab.nxs360.com"
-        ],
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "php-http/discovery": true
