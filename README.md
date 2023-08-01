@@ -2,6 +2,8 @@
 
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%208.1-8892BF.svg)](https://php.net/)
 
+`composer require valantic-spryker-eco/open-ai`
+
 # Description
  - OpenAI Client for spryker
  - BO UI to manage prompts 
