@@ -1,5 +1,5 @@
 {
-    "name": "valantic-cec/open-ai",
+    "name": "valantic-spryker-eco/open-ai",
     "type": "library",
     "description": "OpenAI Client for spryker.",
     "license": "proprietary",
