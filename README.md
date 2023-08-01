@@ -1,8 +1,6 @@
 # Open AI Spryker package
 
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%208.1-8892BF.svg)](https://php.net/)
-[![coverage report](https://gitlab.nxs360.com/packages/php/spryker/open-ai/badges/main/pipeline.svg)](https://gitlab.nxs360.com/packages/php/spryker/open-ai/-/pipelines?page=1&scope=all&ref=main)
-[![coverage report](https://gitlab.nxs360.com/packages/php/spryker/open-ai/badges/main/coverage.svg)](https://packages.gitlab-pages.nxs360.com/php/spryker/open-ai)
 
 # Description
  - OpenAI Client for spryker
@@ -48,9 +46,6 @@
 - `console router:cache:warm-up:backoffice`
 - add `path.resolve('./vendor/valantic-spryker/')` to your JS webpack build dirs `frontend/zed/build.js:11`
 - build frontend (`npm run zed`)
-
-# Reference implementation
-- https://backoffice-de-demo.vcec.cloud/
 
 # HowTos Cli
 
