@@ -2,7 +2,7 @@
     "name": "valantic-cec/open-ai",
     "type": "library",
     "description": "OpenAI Client for spryker.",
-    "license": "MIT",
+    "license": "proprietary",
     "require": {
         "php": ">=8.0",
         "openai-php/client": ">=0.3.5",
